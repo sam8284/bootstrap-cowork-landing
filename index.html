@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProSpace</title>
+    <link rel="icon" href="images/fevicon.PNG" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+
+
+    <!-- <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css"> -->
+
+
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="./swiper/css/swiper-bundle.min.css">
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" class="custom-text-color">
+    <header class="custom-nav p-0">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid  align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.PNG" style="height: 40px;width: 100px;" class="rounded" srcset=""
+                        data-bs-toggle="tooltip" data-bs-title="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-2 text-dark"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <div class="collapse navbar-collapse justify-content-center justify-content-lg-between fw-bold align-items-center"
+                    id="navbarNavAltMarkup">
+                    <!-- <div class="navbar-nav" style="color: #1D1E1C;"> -->
+                    <div class="navbar-nav d-flex justify-content-center justify-content-lg-between  align-items-center gap-2"
+                        style="margin-left: auto;">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#explore">Explore</a>
+                        <a class="nav-link" href="#statistics">Highlights</a>
+                        <a class="nav-link" href="#pricing">Plans</a>
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                        <a class="nav-link" href="#FAQs">FAQs</a>
+                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                        <button class="btn custom-btn ms-lg-5 text-center" onclick="scrollToSection('pricing')">Book Your Spot</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- hero section -->
+    <section id="home">
+        <!-- Slider main container -->
+
+        <div class="container-fluid hero-content">
+            <div class="justify-content-center p-sm-5 w-75 gap-3 ">
+                <h1 class="mb-2">Transform your workday at ProSpace.</h1>
+                <p class="mb-sm-3 mb-md-5">Step into a space designed for focus, collaboration, and growth. At ProSpace,
+                    we combine
+                    modern amenities with an inspiring atmosphere to help you do your best work—every day.</p>
+                <button class="btn custom-btn rounded mx-3 my-3" onclick="scrollToSection('pricing')">Claim Your Spot</button>
+                <button class="btn custom-btn rounded mx-3" onclick="scrollToSection('contact')">Schedule a Tour</button>
+            </div>
+        </div>
+        <div class="swiper m-0 banner-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="banner/banner 1.jpg" alt="Slide1" srcset="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="banner/banner 2.jpg" alt="Slide2" srcset="">
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="banner/banner 3.jpg" alt="Slide3" srcset="">
+
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+
+    <!-- feature section -->
+    <section id="features" class="px-3 py-3 px-sm-5">
+        <div class="container text-center">
+            <h6 class="mt-3">CHOOSE</h6>
+            <h2>Where Productivity Thrives</h2>
+            <p>From high-speed internet and modern meeting rooms to complimentary coffee and community events, our
+                spaces are equipped with features that support focus, collaboration, and well-being. Work better, every
+                day.</p>
+
+            <div class="row row-cols-sm-2 row-cols-md-3 g-4 m-4 ">
+                <div class="col ">
+                    <div class="p-4 h-100 custom-b rounded feature-desc">
+                        <i class="bi bi-shield-lock fs-1 mb-3 "></i>
+                        <h5>Secure High-Speed Internet</h5>
+                        <p>Reliable, fast, and secure connectivity to support all your online work needs.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 h-100 custom-b rounded feature-desc">
+                        <i class="bi bi-person-workspace fs-1 mb-3 "></i>
+                        <h5>Private Offices & Hot Desks</h5>
+                        <p>Choose between dedicated private spaces or flexible shared desks to suit your work style.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 h-100 custom-b rounded feature-desc">
+                        <i class="bi bi-easel fs-1 mb-3"></i>
+                        <h5>Meeting Rooms & Conference Facilities</h5>
+                        <p>Fully equipped spaces for team meetings, client presentations, and virtual calls.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="p-4 h-100 custom-b rounded feature-desc">
+                        <i class="bi bi-clock-history fs-1 mb-3 "></i>
+                        <h5>24/7 Access</h5>
+                        <p>Work on your own schedule with round-the-clock access to the workspace.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 h-100 custom-b rounded feature-desc">
+                        <i class="bi bi-box-seam fs-1 mb-3 "></i>
+                        <h5>Lockers & Storage</h5>
+                        <p>Keep your belongings safe and organized with secure personal storage options.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 h-100 custom-b rounded feature-desc">
+                        <i class="bi bi-bicycle fs-1 mb-3"></i>
+                        <h5>Bike Parking</h5>
+                        <p>Convenient and safe parking for cyclists — ride in, work out.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- explore section  -->
+    <section id="explore" class="px-3 py-3 px-sm-5">
+
+        <div class="container text-center mb-3">
+            <h6 class="mt-3">DISCOVER</h6>
+            <h2>Explore Spaces That Work for You</h2>
+            <p>Discover a variety of beautifully designed coworking spaces tailored to meet your professional needs.
+                Whether you're a freelancer, startup, or remote team, our spaces are built to inspire productivity,
+                creativity, and connection.</p>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide w-100 h-100 my-carousel rounded "
+            data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="explore/img 1.jpg" class="d-block w-100" alt="Hot Desk">
+                    <div class="carousel-caption mb-2 d-md-block">
+                        <h5 class="c-title">Hot Desk</h5>
+                        <p class="c-desc">Flexible shared seating — just plug in and start working.</p>
+                        <a href="#hot-desk" class="btn custom-btn" onclick="scrollToSection('pricing')">Get Started</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="explore/img 2.jpg" class="d-block w-100" alt="Dedicated Desk">
+                    <div class="carousel-caption d-md-block mb-2">
+                        <h5>Dedicated Desk</h5>
+                        <p>Your personal desk in a shared workspace, reserved just for you.</p>
+                        <a href="#dedicated-desk" class="btn custom-btn" onclick="scrollToSection('pricing')" >Reserve Your Spot</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="explore/img 3.jpg" class="d-block w-100" alt="Private Office">
+                    <div class="carousel-caption d-md-block mb-2">
+                        <h5>Private Office</h5>
+                        <p>Secure, fully furnished offices for individuals or teams.</p>
+                        <a href="#private-office" class="btn custom-btn" onclick="scrollToSection('contact')">Schedule a Tour</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="explore/img 4.jpg" class="d-block w-100" alt="Meeting Room">
+                    <div class="carousel-caption d-md-block mb-2">
+                        <h5>Meeting Room</h5>
+                        <p>Professional spaces for calls, pitches, and collaboration.</p>
+                        <a href="#meeting-room" class="btn custom-btn" onclick="scrollToSection('pricing')">Book a Room</a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- </div> -->
+
+    </section>
+
+
+    <!-- statistics section  -->
+    <section id="statistics" class="px-3 py-3 px-sm-5">
+
+        <div class="row justify-content-center align-items-center flex-sm-row-reverse flex-md-row g-2">
+            <!-- First Column: Div -->
+            <div class="col-md-6 mb-3">
+                <div class="col ">
+                    <h6 class="mt-3">IN NUMBERS</h6>
+                    <h2>Transformative Statistics That Speak Volumes</h2>
+
+                    <div class="row row-cols-2 gx-2 gy-2 me-2 ms-5 align-items-stretch">
+                        <div class="col">
+                            <div class=" rounded p-2 text-center stat h-100">
+                                <h2>240%</h2>
+                                <p>Community Growth</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class=" rounded p-2 text-center stat h-100">
+                                <h2>99%</h2>
+                                <p>Technology Uptime</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="rounded p-2 text-center stat h-100">
+                                <h2>50+</h2>
+                                <p>Happy Members</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class=" rounded p-2 text-center stat h-100">
+                                <h2>100%</h2>
+                                <p>Green Energy</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-6 text-center rounded">
+                <img src="images/image.jpg" class="img-fluid rounded"
+                    style="max-height: 600px;object-fit: cover;aspect-ratio: 1;" alt="Coworking Image">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- pricing section -->
+    <section id="pricing" class="px-3 py-3 px-sm-5">
+        <div class="container text-center">
+            <h6 class="mt-3">PRICING</h6>
+            <h2>Flexible Plans for Every Professional</h2>
+            <p>Choose from a range of membership options designed to fit your work style and budget. Whether you need a
+                desk for a day, a private office, or a team suite, our pricing is transparent and tailored to support
+                your success.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center g-5 px-5 px-3 ">
+            <div class="col col-sm-8">
+                <div class="card text-center h-100 custom-border">
+                    <div class="card-header">
+                        Popular Choice
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hot Desk</h5>
+                        <h5 class="card-title">$199/mo</h5>
+                        <h6 class="card-subtitle mb-2 text-start">Best suited for Freelancers, casual use</h6>
+                        <ul class="text-start">
+                            <li>Access to shared workspaces</li>
+                            <li>Mon–Fri, 9am–6pm</li>
+                            <li>High-speed Wi-Fi</li>
+                            <li>Free coffee & snacks</li>
+                            <li>Access to events & lounges</li>
+                        </ul>
+                        <a href="#" class="btn custom-btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-sm-8">
+                <div class="card text-center h-100 custom-border">
+                    <div class="card-header">
+                        Recommended
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dedicated Desk </h5>
+                        <h5 class="card-title">$299/mo</h5>
+                        <h6 class="card-subtitle mb-2 text-start">Perfect for Regular individual use</h6>
+
+                        <ul class="text-start">
+                            <li>Your own desk in a shared area</li>
+                            <li>24/7 access</li>
+                            <li>Lockable storage</li>
+                            <li>Meeting room credits</li>
+                            <li>Business mailing address</li>
+                        </ul>
+                        <a href="#" class="btn custom-btn">Reserve Your Spot</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-sm-8">
+                <div class="card text-center h-100">
+                    <div class="card-header">
+                        Business
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Private Office</h5>
+                        <h5 class="card-title">from $699/mo</h5>
+                        <h6 class="card-subtitle mb-2 text-start">Designed for Small teams, privacy</h6>
+                        <ul class="text-start">
+                            <li>Fully furnished private office</li>
+                            <li>24/7 secure access</li>
+                            <li>Customizable for teams</li>
+                            <li>Unlimited meeting room use</li>
+                            <li>Mail handling & admin support</li>
+                        </ul>
+                        <a href="#" class="btn custom-btn">Schedule a Tour</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-8">
+                <div class="card text-center h-100">
+                    <div class="card-header">
+                        Flexible
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Day Pass</h5>
+                        <h5 class="card-title">$25/day</h5>
+                        <h6 class="card-subtitle mb-2 text-start">For Visitors, drop-ins</h6>
+                        <ul class="text-start">
+                            <li>One full day access</li>
+                            <li>Mon–Fri, 9am–6pm</li>
+                            <li>High-speed Wi-Fi</li>
+                            <li>Quiet, focused environment</li>
+                            <li>Complimentary tea & coffee</li>
+                        </ul>
+                        <a href="#" class="btn custom-btn">Buy a Pass</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-8">
+                <div class="card text-center h-100 custom-border">
+                    <div class="card-header">
+                        Exclusive
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Meeting Room </h5>
+                        <h5 class="card-title">from $99/hour</h5>
+                        <h6 class="card-subtitle mb-2 text-start">Recommended for Client presentations</h6>
+                        <ul class="text-start">
+                            <li>Equipped meeting space</li>
+                            <li>Hourly bookings</li>
+                            <li>Video calls supported</li>
+                            <li>Comfortable for any team size</li>
+                            <li>Refreshments on request</li>
+                        </ul>
+                        <a href="#" class="btn custom-btn">Book a Room</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- testimonials section -->
+    <section id="testimonials" class="px-3 py-3 px-sm-5">
+        <div class="container text-center">
+            <h6 class="mt-3">TESTIMONIALS</h6>
+            <h2>What Our Members Are Saying</h2>
+            <p>Hear from freelancers, entrepreneurs, and teams who’ve found their ideal workspace with us.
+                Real stories from real people — sharing how our coworking spaces have helped them grow, connect, and
+                thrive.</p>
+
+        </div>
+
+
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper custom-b mx-5 p-3 rounded ">
+            <div class="swiper-wrapper ">
+                <!-- Slide 1 -->
+                <div class="swiper-slide h-100 py-3 p-md-4">
+                    <!-- <div class="container px-5 py-0 my-0"> -->
+
+                    <div class="card text-center h-100 mx-5 mx-md-0">
+                        <div class="card-body h-100">
+                            <img src="testimonials/profile1.jpg" class="rounded-circle img-fluid d-block mb-3"
+                                alt="User">
+                            <p>"This space has everything I need — fast WiFi, great coffee, and a productive vibe." </p>
+                            <h5 class="card-title">Alex Johnson</h5>
+                            <h6 class="card-subtitle">Startup Founder</h6>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide h-100 py-3 p-md-4">
+                    <div class="card  text-center h-100 mx-5 mx-md-0">
+                        <div class="card-body h-100">
+                            <img src="testimonials/profile2.jpg" class="rounded-circle img-fluid d-block mb-3"
+                                alt="User">
+                            <p>"The 24/7 access and secure facilities have been incredibly convenient for my team's flexible schedules." </p>
+                            <h5 class="card-title">Emily Thompson</h5>
+                            <h6 class="card-subtitle">Content Strategist</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide h-100 py-3 p-md-4">
+                    <div class="card text-center h-100 mx-5 mx-md-0">
+                        <div class="card-body h-100">
+                            <img src="testimonials/profile3.jpg" class="rounded-circle img-fluid d-block mb-3"
+                                alt="User">
+                            <p>"The community here is incredible. I've made valuable connections and new friends." </p>
+                            <h5 class="card-title">Sara Gomez</h5>
+                            <h6 class="card-subtitle">Freelance Designer</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide h-100 py-3 p-md-4">
+                    <div class="card  text-center h-100 mx-5 mx-md-0">
+                        <div class="card-body h-100">
+                            <img src="testimonials/profile4.jpg" class="rounded-circle img-fluid d-block mb-3"
+                                alt="User">
+                            <p>"The meeting rooms are perfect for client calls, and the staff is always helpful."</p>
+                            <h5 class="card-title">Liam Carter</h5>
+                            <h6 class="card-subtitle">Marketing Consultant</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide h-100 py-3 p-md-4">
+                    <div class="card text-center h-100 mx-5 mx-md-0">
+                        <div class="card-body h-100">
+                            <img src="testimonials/profile5.jpg" class="rounded-circle img-fluid d-block mb-3"
+                                alt="User">
+                            <p>"Love the design of this space. Modern, functional, and inspiring." </p>
+                            <h5 class="card-title">Jane Patrick</h5>
+                            <h6 class="card-subtitle">UI/UX Specialist</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional navigation buttons -->
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev "></div>
+
+            <!-- Optional pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+    <!-- FAQs section -->
+    <section id="FAQs" class=" px-3 py-3 px-sm-5">
+
+        <div class="d-flex flex-md-row justify-content-between align-items-center flex-wrap gap-2 p-2">
+            <div class="col-md-5 justify-content-center align-items-center mb-3">
+                <div class="container">
+                    <h6 class="mt-3">FREQUENTLY ASKED QUESTIONS</h6>
+                    <h2>Coworking Made Simple</h2>
+                    <p>Discover a variety of beautifully designed coworking spaces tailored to meet your professional
+                        needs. Whether you're a freelancer, startup, or remote team, our spaces are built to inspire
+                        productivity, creativity, and connection.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container p-0 ">
+                    <div class="accordion m-0 rounded m-md-0 p-md-0" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="rounded accordion-button " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <Strong>How is coworking different from a regular office?</Strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body ps-5">
+                                    With coworking, you only pay for what you use, and you’re not locked into long-term
+                                    leases. Plus, you become part of a community of diverse professionals.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="rounded accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <strong>Can I change or cancel my plan anytime?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body ps-5">
+                                    <strong>Definitely.</strong> Most plans are flexible and month-to-month, so you can
+                                    change or cancel
+                                    with notice.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="rounded accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <strong>Is the space secure?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body ps-5">
+                                    <strong>Rest assured</strong> — our facilities are secured with keycard or app-based
+                                    entry, CCTV
+                                    monitoring, and onsite staff during peak hours.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="rounded accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <strong>Can I host my own event in your space?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body ps-5">
+                                    <strong>Indeed,</strong> members can book our event spaces or meeting rooms, subject
+                                    to availability.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <strong>Are your spaces accessible for people with disabilities?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body ps-5">
+                                    <strong>Absolutely </strong> — all of our spaces are ADA-compliant and accessible.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- join section -->
+    <section id="join" class="px-3 py-3 px-sm-5" style="background-color: #F5F5F5;">
+        <div class="container">
+            <div class="text-center p-5">
+                <h6 class="mt-3">JOIN</h6>
+                <h1 class="mb-3">Make Your Move — Start Coworking Today</h1>
+                <p>Connect with like-minded professionals in a dynamic workspace that fosters innovation, productivity,
+                    and opportunity. Become part of a coworking network designed for success.</p>
+                <button class="btn custom-btn rounded mx-3 mt-3">Claim Your Spot</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog section -->
+    <section id="blog" class="px-3 py-3 px-sm-5 ">
+        <div class="container text-center">
+            <h6 class="mt-3">COWORK CHRONICLES</h6>
+            <h2>Insights. Innovation. Inspiration</h2>
+            <p>Hear from freelancers, entrepreneurs, and teams who’ve found their ideal workspace with us.
+                Real stories from real people — sharing how our coworking spaces have helped them grow, connect, and
+                thrive.</p>
+
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center align-items-stretch g-5 h-100">
+            <div class="col col-sm-8 ">
+                <div class="card pb-2 h-100">
+                    <img src="blog/blog1.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="d-flex align-items-center align-items-center m-2">
+                        <h6 class="me-3 mb-0">Trending</h6><span class="mb-0 mt-0 text-muted">7 min read</span>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Navigating the Future: Trends in Modern Coworking Spaces</h5>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center b-link">
+                        <a href="" class=" text-center ">Read More <i class="bi bi-chevron-right fs-6"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col col-sm-8 ">
+                <div class="card pb-2 h-100">
+                    <img src="blog/blog2.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="d-flex align-items-center align-items-center m-2">
+                        <h6 class="me-3 mb-0 ">Productivity</h6><span class="mb-0 mt-0 text-muted">5 min read</span>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mastering Productivity: Tips from Cowork's High Achievers</h5>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="" class="text-center">Read More <i class="bi bi-chevron-right fs-6"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-8 ">
+                <div class="card pb-2 h-100">
+                    <img src="blog/blog3.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="d-flex align-items-center align-items-center m-2">
+                        <h6 class="me-3 mb-0 ">Talk</h6><span class="mb-0 mt-1 text-muted">5 min read</span>
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tech Talk: The Backbone of Cowork's Seamless Experience</h5>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="" class="text-center">Read More <i class="bi bi-chevron-right fs-6"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- contact section -->
+    <section id="contact" class="px-3 py-3 px-sm-5 ">
+        <div class="d-flex flex-md-row justify-content-between align-items-center flex-wrap gap-2 ps-2">
+            <div class="col-md-5 justify-content-center align-items-center mb-sm-2">
+                <div class="container">
+                    <h6 class="mt-3">CONTACT US</h6>
+                    <h2>Let's Get In Touch</h2>
+                    <p>Looking for a flexible workspace, a vibrant community, or tailored solutions for your team? Our
+                        team is ready to assist. Reach out today and let’s start the conversation.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="container p-2 help">
+                    <div class="mb-3 ">
+                        <label for="name" class="form-label">Name :</label>
+                        <div class="input-group flex-nowrap p-0 m-0">
+                            <span class="input-group-text" id="addon-wrapping">
+                                <i class="bi bi-person fs-5 w-100 p-0 m-0"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="Jane Doe" aria-label="Name"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 details">
+                        <label for="email" class="form-label">Email address :</label>
+                        <div class="input-group flex-nowrap p-0 m-0">
+                            <span class="input-group-text" id="addon-wrapping">
+                                <i class="bi bi-envelope fs-5 w-100 p-0 m-0"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com"
+                                aria-label="Email" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message :</label>
+                        <textarea class="form-control" id="message" rows="3"
+                            placeholder="Ask us anything ..."></textarea>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button class="btn custom-btn" onclick="scrollToSection('home')">Send Message</button>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- footer section -->
+    <footer id="footer">
+
+        <div class="container-fluid px-5 py-3">
+            <div class="row ">
+                <div class="col-md-6 mb-sm-5">
+                    <div class="left">
+                        <a class="navbar-brand">
+                            <img src="images/logo.PNG"
+                                style="height: 40px;width: 100px;filter: invert(1);cursor: pointer;" class="rounded"
+                                srcset="" data-bs-toggle="tooltip" data-bs-title="Logo"></a>
+                        <p class="mb-4">Join our newsletter to stay up to date on features and releases.</p>
+
+                        <div class="input-group mb-4">
+                            <input type="email" class="form-control custom-i-focus" placeholder="you@example.com"
+                                aria-label="you@example.com" aria-describedby="button-addon2" data-bs-toggle="tooltip"
+                                data-bs-title="Email ID">
+                            <button class="btn custom-btn" type="button" id="button-addon2">Button</button>
+                        </div>
+
+                        <p>By subscribing you agree to with our Privacy Policy and provide consent to receive updates
+                            from our company.</p>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="right">
+                        <div class="links d-flex gap-4 mb-3">
+
+                            <div class="container explore-more cols-md-12">
+                                <p class="fs-6"><strong>EXPLORE MORE</strong></p>
+                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                    <a href="#" class="text-center">Home <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                    <a href="#" class="text-center">About <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center mb-2">
+                                    <a href="#" class="text-center">Pricing <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                    <a href="#" class="text-center">Events <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                    <a href="#" class="text-center">Blog <i class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                            </div>
+
+
+                            <div class="container explore-more">
+                                <p class="fs-6"><strong>STAY CONNECTED</strong></p>
+                                <div class="d-flex justify-content-start align-items-center lk mb-2">
+                                    <a href="#" class=" text-center">Subscribe <i
+                                            class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center lk mb-2">
+                                    <a href="#" class=" text-center">Member Stories <i
+                                            class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center lk mb-2">
+                                    <a href="#" class=" text-center">Locations <i
+                                            class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center  mb-2">
+                                    <a href="#" class=" text-center">Write for Us <i
+                                            class="bi bi-chevron-right fs-6"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="container follow-us d-flex gap-3  border-success justify-content-start align-items-center m-sm-0">
+                            <p class="fs-6 m-0"><strong>STAY CONNECTED</strong></p>
+
+                            <i class="bi bi-twitter-x fs-5 "></i>
+                            <i class="bi bi-instagram fs-5"></i>
+                            <i class="bi bi-linkedin fs-5"></i>
+                            <i class="bi bi-youtube fs-3"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <p class="m-0 p-0 mt-4" style="color: white;">© 2025 ProSpace. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script> -->
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./swiper/js/swiper-bundle.min.js"></script>
+
+    
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
