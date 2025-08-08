@@ -9,17 +9,16 @@ A modern, responsive landing page for **ProSpace**, a fictional co-working space
 ## 📸 Preview
 
 <p align="center">
-  <img src="./assets/desktop.png" alt="Desktop" width="600" style="vertical-align: top;margin-top: 10px;" hspace="10"/>
+  <img src="./assets/desktop.PNG" alt="Desktop" width="600" style="vertical-align: top;margin-top: 10px;" hspace="10"/>
   <img src="./assets/tablet.png" alt="Tablet" width="400" style="vertical-align: top;margin-top: 10px;" hspace="10"/>
   <img src="./assets/mobile.png" alt="Mobile" width="300" style="vertical-align: top;margin-top: 10px;" />
 </p>
 
 
-## 🚀 Live Demo (change)
+## 🚀 Live Demo
 
-🌐 [View Live on Netlify](https://your-netlify-link.netlify.app)
+🌐 [View Live ](https://sam8284.github.io/bootstrap-cowork-landing/)
 
----
 
 
 ## 🎯 Purpose
@@ -87,23 +86,8 @@ The purpose of this project is to demonstrate the ability to independently desig
 │   └── profile 3.jpg
 │   └── profile 4.jpg
 │   └── profile 5.jpg
-├── bootstrap/ 
-│       ├── css/
-│       |    └── bootstrap.min.css
-│       └── js/
-│            └── bootstrap.bundle.min.js
 ├── fonts/ 
 │       └── Raleway-VariableFont_wght.woff2
-├── icons/ 
-│       ├── fonts/
-│       |   ├── bootstrap-icons.woff 
-│       |   └── bootstrap-icons.woff2
-│       └── bootstrap-icons.css
-├── swiper/ 
-│       ├── css/
-│       |    └── swiper-bundle.min.css
-│       └── js/
-│            └── swiper-bundle.min.js
 ├── index.html 
 ├── style.css 
 ├── main.js 
@@ -118,9 +102,9 @@ The purpose of this project is to demonstrate the ability to independently desig
 
 
 
-## 📦 Installation / Usage (change)
+## 📦 Installation / Usage
 
-1. Clone the repository (change)
+1. Clone the repository 
 
 ```bash
 git clone https://github.com/sam8284/bootstrap-cowork-landing.git
@@ -141,10 +125,7 @@ open index.html
 ### Note:
 ✅ No build tools or dependencies needed.
 
-## 🚀 Live Demo (change)
 
-🔗 [View Live Site](www.google.com)
-(Change)
 
  ## 📋 Future Enhancements
 - Backend integration for contact form (e.g., with PHP or Firebase)
